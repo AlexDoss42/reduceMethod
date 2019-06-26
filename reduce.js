@@ -20,6 +20,9 @@ console.log(total)
 // returns 6
 
 
+// ERROR EXAMPLES
+
+const error = [].reduce()
 
 // REAL-LIFE EXAMPLE FINANCIAL TRANSACTIONS
 
@@ -213,3 +216,16 @@ const financialTransactionArrSansDuplicates = financialTransactionArray.reduce(f
 }, [])
 
 console.log(financialTransactionArrSansDuplicates);
+
+// OTHER COOL EXAMPLES IF THERE IS TIME
+
+// FLATTEN AN ARRAY OF ARRAYS
+
+const flattened = [[0, 1], [2, 3], [4, 5]].reduce(
+  function(acc, curr) {
+    return acc.concat(curr);
+  },
+  []
+);
+
+console.log(flattened)
